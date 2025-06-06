@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREIRE ROADS</title>
+    <style>
+        :root {
+            --cor-primaria: #0B1B58;
+            --cor-secundaria: #4A5784;
+            --cor-escura: #0A1B58;
+            --branco: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cor-primaria);
+            color: var(--branco);
+        }
+
+        header {
+            background-color: var(--cor-escura);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav {
+            background-color: var(--cor-secundaria);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--branco);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+
+        .produto {
+            background-color: var(--branco);
+            border: 1px solid var(--cor-secundaria);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .produto:hover {
+            transform: scale(1.02);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .produto-info {
+            padding: 15px;
+        }
+
+        .produto-info h2 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+            color: var(--cor-escura);
+        }
+
+        .produto-info p {
+            margin: 0 0 10px;
+        }
+
+        .preco {
+            font-weight: bold;
+            color: var(--cor-secundaria);
+        }
+
+        footer {
+            background-color: var(--cor-escura);
+            text-align: center;
+            padding: 15px;
+            color: var(--branco);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>FREIRE ROADS</h1>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Produtos</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <section class="catalogo">
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x200" alt="Produto 1">
+            <div class="produto-info">
+                <h2>Notebook X1</h2>
+                <p>Processador i7, 16GB RAM, SSD 512GB</p>
+                <p class="preco">R$ 4.599,00</p>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img src="https://via.placeholder.com/250x200" alt="Produto 2">
+            <div class="produto-info">
+                <h2>Smartphone Z10</h2>
+                <p>6.5", 128GB, Câmera Tripla</p>
+                <p class="preco">R$ 2.299,00</p>
+            </div>
+        </div>
+
+        <!-- Adicione mais produtos aqui -->
+    </section>
+
+    <footer>
+        &copy; 2025 TechPrime - Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>
